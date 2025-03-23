@@ -16,5 +16,5 @@ const { privateKey, publicKey } = generateKeyPairSync(`${process.env.CRYPTO_METH
     }
 });
 
-fs.writeFileSync(`${process.env.PUBLIC_KEY_PATH}`, privateKey, { mode: 0o600 });
-fs.writeFileSync(`${process.env.PRIVATE_KEY_PATH}`, publicKey);
+fs.writeFileSync(`${process.env.PRIVATE_KEY_PATH}`, privateKey, { mode: 0o600 });
+fs.writeFileSync(`${process.env.PUBLIC_KEY_PATH}`, publicKey);
